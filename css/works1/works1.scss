@@ -129,6 +129,8 @@
                         will-change: transform;
                         transition: 300ms ease;
 
+                       
+
                         &.mobileImg {
                             position: absolute;
                             left: 50%;
@@ -492,6 +494,12 @@
         &.visible {
             opacity: 1;
             pointer-events: auto;
+        }
+
+        .readme_background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
         }
 
         .readme_scroll {

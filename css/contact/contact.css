@@ -60,6 +60,12 @@
   height: 5px;
   background-color: white;
 }
+.Contact_container .Contact_wrap p a {
+  transition: 400ms;
+}
+.Contact_container .Contact_wrap p a:hover {
+  color: rgb(255, 255, 198);
+}
 .Contact_container .social_wrap {
   display: flex;
   gap: 50px;

@@ -349,8 +349,8 @@ $('.Item_nav_prev, .m_nav_wrap .prev').click(() => {
         if (worksItem == 0) {
             $('#nav' + worksItem).removeClass("active");
             $('.wi' + worksItem).fadeOut(250, "swing", () => {
-                $('.wi' + 3).stop().fadeIn(250, "swing", () => { worksItem = 3; isClick = false; });
-                $('#nav' + 3).addClass("active");
+                $('.wi' + 5).stop().fadeIn(250, "swing", () => { worksItem = 5; isClick = false; });
+                $('#nav' + 5).addClass("active");
             });
         }
         if (worksItem > 0) {
