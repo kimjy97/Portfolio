@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    //font-family: 'Poppins', 'Pretendard Variable', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    //user-drag: none !important;
+}
+
+body {
+    font-family: 'Poppins', 'Pretendard Variable', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(21,24, 27);
+    overflow-x: hidden;
+    
+}
+
+*::-webkit-scrollbar {
+    display: none !important;
+}
+::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(78, 29, 124);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fp-watermark {
+    display: none;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: rgba(255, 255, 255, 0.5) !important;
+}
+
+#fp-nav .fp-tooltip {
+    position: absolute;
+    top: 50% !important;
+    right: 23px !important;
+    transform: translateY(-50%) !important;
+    color: rgb(212, 212, 212) !important;
+    font-size: 0.65rem !important;
+    font-weight: 300;
+}
+
+#fp-nav .active+.fp-tooltip {
+    color: rgb(255, 255, 255) !important;
+    font-size: 0.75rem !important;
+    font-weight: 500;
+}
+
+
+//---FONT_FACE---//
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+//--MEDIA_QUERY--//
+@media (max-width: 900px) {
+    html {
+        font-size: 15px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 14px !important;
+    }
+    h1 {
+        font-size: 2.1rem !important;
+    }
+}

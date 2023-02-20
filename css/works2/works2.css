@@ -1,0 +1,125 @@
+.Works2_container {
+  position: relative;
+  min-height: 100vh;
+}
+.Works2_container .blend_background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../../src/img/Frame_1.jpg") 50% 50% no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+.Works2_container h1 {
+  padding-top: 120px;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 900;
+}
+.Works2_container > p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.Works2_container .Visual_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  height: 400px;
+  overflow-x: hidden;
+  padding-bottom: 170px;
+}
+.Works2_container .Visual_container .Visual_wrap {
+  position: absolute;
+  display: flex;
+}
+.Works2_container .Visual_container .Visual_wrap > ul {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding-right: 80px;
+}
+.Works2_container .Visual_container .Visual_wrap > ul > li {
+  position: relative;
+  height: 400px;
+  aspect-ratio: 8/10;
+  background-color: #000000;
+  transition: 400ms ease;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  overflow: hidden;
+  will-change: transform;
+}
+.Works2_container .Visual_container .Visual_wrap > ul > li > img {
+  width: 100%;
+}
+.Works2_container .Visual_container .Visual_wrap > ul > li .info_wrap {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: 90px;
+  padding-top: 22px;
+  padding-left: 15px;
+  opacity: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  transition: 300ms;
+  box-sizing: border-box;
+}
+.Works2_container .Visual_container .Visual_wrap > ul > li .info_wrap > img {
+  position: relative;
+  min-width: 0;
+  margin-left: 4px;
+  margin-bottom: -5px;
+  height: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Works2_container .Visual_container .Visual_wrap > ul > li .info_wrap p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.Works2_container .Visual_container .Visual_wrap > ul > li .info_wrap .colorset_wrap {
+  position: absolute;
+  right: 10px;
+  bottom: 19px;
+}
+.Works2_container .Visual_container .Visual_wrap > ul > li .info_wrap .colorset_wrap ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+.Works2_container .Visual_container .Visual_wrap > ul > li .info_wrap .colorset_wrap ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px black;
+}
+.Works2_container .Visual_container .Visual_wrap > ul > li .info_wrap .colorset_wrap ul li div {
+  width: 10px;
+  height: 10px;
+  margin-left: 8px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 900px) {
+  .Works2_container {
+    min-height: none;
+  }
+}
+@media (hover: hover) {
+  .Visual_container .Visual_wrap > ul > li:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+  }
+  .Visual_container .Visual_wrap > ul > li:hover .info_wrap {
+    opacity: 1 !important;
+  }
+}/*# sourceMappingURL=works2.css.map */

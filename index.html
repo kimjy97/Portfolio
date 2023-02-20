@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>JongYeon's PORTFOLIO</title>
+    <meta name=”description” content='안녕하세요. 프론트엔드 개발자 김종연의 포트폴리오 사이트입니다. 찾아주셔서 감사합니다.' />
+    <link rel="shortcut icon" href="./src/img/fav.ico" />
+    <link rel="stylesheet" href="./css/index/index.css" />
+    <link rel="stylesheet" href="./css/header/header.css" />
+    <link rel="stylesheet" href="./css/intro/intro.css" />
+    <link rel="stylesheet" href="./css/about/about.css" />
+    <link rel="stylesheet" href="./css/Stacks/Stacks.css" />
+    <link rel="stylesheet" href="./css/works1/works1.css" />
+    <link rel="stylesheet" href="./css/works2/works2.css" />
+    <link rel="stylesheet" href="./css/contact/contact.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type='text/javascript' src='./js/jquery.mousewheel.min.js'></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="Header_container">
+            <div class="burger">
+                <div class="close_icon"></div>
+                <div class="open_icon"></div>
+            </div>
+            <nav class="left">
+                <a id="logo"><img src="./src/img/logo.png" alt="JongYeon 로고"></a>
+            </nav>
+            <nav class="right">
+                <ul id="menu">
+                    <a href="#0">
+                        <li id="menu0" data-menuanchor="0">INTRO</li>
+                    </a>
+                    <a href="#1">
+                        <li id="menu1" data-menuanchor="1">ABOUT</li>
+                    </a>
+                    <a href="#2">
+                        <li id="menu2" data-menuanchor="2">STACKS</li>
+                    </a>
+                    <a href="#3">
+                        <li id="menu3" data-menuanchor="3">WORKS</li>
+                    </a>
+                    <a href="#4">
+                        <li id="menu4" data-menuanchor="4">CONTACT</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="m_menu">
+            <ul>
+                <a href="#0">
+                    <li id="menu0" data-menuanchor="0">INTRO</li>
+                </a>
+                <a href="#1">
+                    <li id="menu1" data-menuanchor="1">ABOUT</li>
+                </a>
+                <a href="#2">
+                    <li id="menu2" data-menuanchor="2">STACKS</li>
+                </a>
+                <a href="#3">
+                    <li id="menu3" data-menuanchor="3">WORKS</li>
+                </a>
+                <a href="#4">
+                    <li id="menu4" data-menuanchor="4">CONTACT</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <!-- FullPage SECTIONS -->
+    <div id="fullpage">
+        <!-- Intro -->
+        <section class="section ct Intro" id="Intro">
+            <div id="typo_1">
+                <h1>FRONT-END DEV.</h1>
+                <h2>PORTFOLIO</h2>
+            </div>
+            <div class="scroll">
+                <div></div>
+                <div></div>
+                <p>SCROLL DOWN</p>
+            </div>
+        </section>
+        <!-- About -->
+        <section class="section ct About" id="About">
+            <div class="About_container">
+                <div class="attbg"></div>
+                <div id="typo_2">
+                    <h1>I’M GETTING READY FOR<br><span>NEW START.</span></h1>
+                </div>
+                <div id="typo_3">
+                    <p>안녕하세요. 프론트엔드 개발자를 꿈꾸는 김종연입니다.</p>
+                    <p class="word"><span class="quote">“</span> 집요하다 : [형용사] 몹시 고집스럽고 끈질기다. <span
+                            class="quote">”</span>
+                    </p>
+                    <p>이 단어는 저에게 너무 어울리는 말입니다. 단 한개의 결함도 용납 못하는 디테일을 추구하며 목적을 위해 밤을 새우는 것을 두려워하지 않습니다. 항상 이용자 입장에서
+                        생각하며 직접 수십번 테스트해가며 작업합니다.<br>초등학생 때부터 처음으로 꿈꿔왔던 개발자의 꿈을 실현해보고자 합니다. 신입으로서 항상 배우는 자세를 가지며 경력을
+                        쌓을 준비가 되었습니다!</p>
+                    <ul class="tag_wrap">
+                        <li class="tag">#열정있는</li>
+                        <li class="tag">#세심한</li>
+                        <li class="tag">#집요한</li>
+                    </ul>
+                    <a href="#1/1" id="more">
+                        <div class="more">자세히 보기</div>
+                    </a>
+                </div>
+            </div>
+            <div id='about1'>
+                <div class="back"></div>
+                <div class="close"><img src='src/img/close_icon.png' alt="닫기 버튼"></div>
+                <div class="about1_container">
+                    <h1>MY STORY</h1>
+                    <p>
+                        &nbsp;저는 초등학교 때 게임을 하면서 내가 직접 이런 게임을 기획하고 만들어 운영해보고 싶다라는 생각이 들어 여러가지 개발 툴을 찾아보다가 당시 유행하던 플래시라는
+                        것을 알게되었습니다.<br>
+                        그 이후로 재미를 붙여 점점 코딩을 깊게 배우기 시작했고, 플래시 커뮤니티에 작품을 올리면 베스트 작품에도 자주 올라가고 대부분 반응이 좋았습니다. 이 것은 저에게 성취감을
+                        크게 느끼게 해주었고, 프로그래밍의 길에 한 발자국씩 나아갈 수 있는 힘이 되었습니다.
+                    </p>
+                    <ul class="past_wrap">
+                        <li onclick="pastImgClick('1_2.jpg')"><img src='src/img/past/1_2.jpg' alt='과거 프로젝트'></li>
+                        <li onclick="pastImgClick('2_1.jpg')"><img src='src/img/past/2_1.jpg' alt='과거 프로젝트'></li>
+                        <li onclick="pastImgClick('3_1.jpg')"><img src='src/img/past/3_1.jpg' alt='과거 프로젝트'></li>
+                        <li onclick="pastImgClick('3_2.jpg')"><img src='src/img/past/3_2.jpg' alt='과거 프로젝트'></li>
+                        <li onclick="pastImgClick('4_1.jpg')"><img src='src/img/past/4_1.jpg' alt='과거 프로젝트'></li>
+                        <li onclick="pastImgClick('4_2.jpg')"><img src='src/img/past/4_2.jpg' alt='과거 프로젝트'></li>
+                        <li>
+                            <p>· · ·</p>
+                        </li>
+                    </ul>
+                    <p class="img_title">[ 2010~2012년도 중학생 때의 작품 ]</p>
+                    <p>&nbsp;어렸을 적 작품이라서 부끄럽지만 플래시라는 프로그램으로 정말 다양하게 만들어본 수십개의 작품 중 몇가지의 작품들입니다. 비록 지금은 플래시가 중단되었지만
+                        프로그래머로서의 성장에 정말 많은 도움이 되었고, 다른 프로그래밍 언어나 알고리즘을 배우는 것도 수월하게 할 수 있었습니다.<br>&nbsp;개발자의 길은 평생을 트렌드를
+                        쫓아 공부해야 한다고 생각합니다. 어렸을 때부터 이런 적성과 흥미가 있었던 저에게 있어서는 개발자는 천직이라고 생각하며 끊임 없이 공부할 것입니다!</p>
+                </div>
+            </div>
+        </section>
+        <!-- Stacks -->
+        <section class="section ct Stacks" id="Stacks">
+            <canvas id="dotCanvas"></canvas>
+            <div class="grad top"></div>
+            <div class="grad bottom"></div>
+            <div class="Stacks_container">
+                <h1>TECH STACK</h1>
+                <h2>아이콘에 마우스를 올리면 자세한 설명이 나옵니다.</h2>
+                <div id="frontendStack" class="stacks_wrap">
+                    <div class="subTitle frontend">
+                        <span># FRONT-END SKILL</span>
+                    </div>
+                    <div class="stack_container">
+                        <ul>
+                            <li>
+                                <img src="src/img/stack_icon/html5.png" alt="HTML5">
+                                <div>
+                                    <p>HTML5</p>
+                                    <p>웹접근성, 표준성을 준수하며 시멘틱태그를 이용해 마크업 할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/css3.png" alt="CSS3">
+                                <div>
+                                    <p>CSS3</p>
+                                    <p>position, display를 적절히 사용하여 반응형웹을 적용할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/sass.png" alt="SASS">
+                                <div>
+                                    <p>SASS</p>
+                                    <p>SCSS의 문법과 모듈화를 잘 활용하여 스타일 작업을 원활히 할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/js.png" alt="JS">
+                                <div>
+                                    <p>Javascript</p>
+                                    <p>Javascript의 배열, 메소드, DOM을 이해하며 다양한 상황에 적용할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/jquery.png" alt="JQuery">
+                                <div>
+                                    <p>JQuery</p>
+                                    <p>관련 라이브러리와 애니메이션, 여러 메소드들을 잘 활용할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/reactjs.png" alt="React.js">
+                                <div>
+                                    <p>React.js</p>
+                                    <p>React 구조와 여러가지 hook들을 잘 알고 있으며, 범용적이고 재사용가능한 컴포넌트 설계를 할 수 있습니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="backendStack" class="stacks_wrap">
+                    <div class="subTitle backend">
+                        <span># BACK-END SKILL</span>
+                    </div>
+                    <div class="stack_container">
+                        <ul>
+                            <li>
+                                <img src="src/img/stack_icon/nodejs.png" alt="Node.js">
+                                <div>
+                                    <p>Node.js</p>
+                                    <p>서버의 API를 구축할 수 있으며, DB와 연동하여 CRUD 기능을 수행할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img id='height_icon' src="src/img/stack_icon/mongodb.png" alt="mongoDB">
+                                <div>
+                                    <p>mongoDB</p>
+                                    <p>mongoose를 이용해 mongoDB의 스키마 정의와 데이터들을 처리할 수 있습니다. </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/php.png" alt="PHP">
+                                <div>
+                                    <p>PHP</p>
+                                    <p>PHP를 이용하여 동적컨텐츠를 만들 수 있고, CRUD 기능을 수행할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/json.png" alt="JSON">
+                                <div>
+                                    <p>JSON</p>
+                                    <p>JSON의 객체 구조를 잘 파악할 수 있으며, javascript에서 활용할 수 있습니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="toolStack" class="stacks_wrap">
+                    <div class="subTitle backend">
+                        <span># USING TOOL</span>
+                    </div>
+                    <div class="stack_container">
+                        <ul>
+                            <li>
+                                <img src="src/img/stack_icon/vscode.png" alt="VisualStudio code">
+                                <div>
+                                    <p>VS Code</p>
+                                    <p>주로 사용하는 코딩툴이며, 코딩에 편리한 확장프로그램들을 설치해 사용하고 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img id='height_icon' src="src/img/stack_icon/figma.png" alt="Figma">
+                                <div>
+                                    <p>Figma</p>
+                                    <p>데스크톱, 모바일 UI/UX 시안을 작업 할 수 있으며, 디버깅을 잘 활용할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/photoshop.png" alt="photoshop">
+                                <div>
+                                    <p>PHOTOSHOP</p>
+                                    <p>마스크효과, 레이어 활용 등을 이용해 다양한 그래픽 요소를 제작할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/illustrator.png" alt="illustrator">
+                                <div>
+                                    <p>Illustrator</p>
+                                    <p>펜툴 활용과 기타도구들을 이용해서 벡터 형식의 디자인 요소를 제작할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/postman.png" alt="postman">
+                                <div>
+                                    <p>POSTMAN</p>
+                                    <p>Postman을 이용해 서버에 GET, POST 요청을 해서 서버 디버깅을 할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/git.png" alt="Git">
+                                <div>
+                                    <p>Git</p>
+                                    <p>commit, push, pull, clone 등 git 명령어를 사용하여 레파지토리에 접근할 수 있습니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Works -->
+        <section class="section ct Works" id="Works">
+            <div class="Works1_container">
+                <h1>WORKS</h1>
+                <div class="Item_container">
+                    <div class="Item_nav_prev" title="PREVIOUS PROJECT"></div>
+                    <div class="wi wi0 visible">
+                        <div class="Item_wrap">
+                            <div class="IMG_wrap">
+                                <div class="IMG_main" onclick="mainImgClick(0,0)"><img
+                                        src='./src/img/project_img/0_0.jpg' alt='프로젝트 이미지'></div>
+                                <div class="IMG_sub_wrap">
+                                    <div class="IMG_sub active" onclick="subImgClick(0,0)"><img
+                                            src='./src/img/project_img/0_0.jpg' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(0,1)"><img
+                                            src='./src/img/project_img/0_1.jpg' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(0,2, true)"><img class='mobileImg'
+                                            src='./src/img/project_img/0_2.jpg' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(0,3)"><img
+                                        src='./src/img/project_img/0_3.jpg' alt='프로젝트 이미지'></div>
+                                </div>
+                            </div>
+                            <div class="info_wrap">
+                                <div class="info_title">JongYeon's 개발 블로그</div>
+                                <div class="info_sub">개인프로젝트</div>
+                                <div class="info_main">React.js + SCSS + Node.js + express를 이용하여 풀스택으로 만든 개발 블로그입니다. DB는
+                                    noSQL인 'mongoDB'를 사용했고 CSR의 단점인 SEO를 최적화 함으로써 구글에서 검색가능합니다. 반응형웹으로 만들어져 모든 환경에서
+                                    사용가능합니다. <span onclick="moreButtonClick(0)">더보기</span>
+                                    <div class="more_wrap">
+                                        <p>···</p>
+                                        나만의 블로그를 직접 디자인하여 처음부터 배포까지 나의 힘으로 만들어보고 싶었고, React.js를 처음으로 배우면서 만들었기에 프로젝트 기간이
+                                        상당히 길어졌습니다. 그래서 굉장히 애정이 가는 프로젝트이며, 앞으로는 Next.js를 통해 SSR로 개편을 준비하고, 그 전까지는 블로그를 좀
+                                        더 다듬고 포스팅도 이어갈 예정입니다.
+                                    </div>
+                                </div>
+                                <ul class="tag_wrap">
+                                    <li class="tag">#React.js</li>
+                                    <li class="tag">#Node.js</li>
+                                    <li class="tag">#express</li>
+                                    <li class="tag">#mongoDB</li>
+                                    <li class="tag">#반응형웹</li>
+                                </ul>
+                                <div class="button_wrap">
+                                    <a>
+                                        <div class="readme" onclick="readmeClick()">Readme</div>
+                                    </a>
+                                    <a href="https://blog.poot97.woobi.co.kr" target="_blank">
+                                        <div class="goto">사이트 바로가기</div>
+                                    </a>
+                                    <a href="https://github.com/kimjy97/devBlog" target="_black">
+                                        <div class="more">GitHub</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wi wi1">
+                        <div class="Item_wrap">
+                            <div class="IMG_wrap">
+                                <div class="IMG_main" onclick="mainImgClick(1,0)"><img
+                                        src='./src/img/project_img/1_0.jpg' alt='프로젝트 메인이미지'></div>
+                                <div class="IMG_sub_wrap">
+                                    <div class="IMG_sub active" onclick="subImgClick(1,0)"><img
+                                            src='./src/img/project_img/1_0.jpg' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(1,1)"><img
+                                            src='./src/img/project_img/1_1.jpg' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(1,2, true)"><img class='mobileImg'
+                                            src='./src/img/project_img/1_2.jpg' alt='프로젝트 이미지'></div>
+                                </div>
+                            </div>
+                            <div class="info_wrap">
+                                <div class="info_title">PORTFOLIO</div>
+                                <div class="info_sub">개인프로젝트</div>
+                                <div class="info_main">JQuery + SCSS 를 이용해 만든 포트폴리오 입니다. 이 포트폴리오를 보는 입장을 생각하며 UI/UX 와
+                                    비주얼 부분을 신경써서 만들었습니다. 반응형웹으로 만들어져 모든 환경에서 사용가능합니다.
+
+                                </div>
+                                <ul class="tag_wrap">
+                                    <li class="tag">#JQuery</li>
+                                    <li class="tag">#AJAX</li>
+                                    <li class="tag">#PHP</li>
+                                    <li class="tag">#반응형웹</li>
+                                </ul>
+                                <div class="button_wrap">
+                                    <a href="http://poot97.woobi.co.kr/" target="_blank">
+                                        <div class="goto">사이트 바로가기</div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="more">GitHub</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wi wi2">
+                        <div class="Item_wrap">
+                            <div class="IMG_wrap">
+                                <div class="IMG_main" onclick="mainImgClick(2,0)"><img
+                                        src='./src/img/project_img/2_0.jpg' alt='프로젝트 메인이미지'></div>
+                                <div class="IMG_sub_wrap">
+                                    <div class="IMG_sub active" onclick="subImgClick(2,0)"><img
+                                            src='./src/img/project_img/2_0.jpg' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(2,1)"><img
+                                            src='./src/img/project_img/2_1.jpg' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(2,2, true)"><img class='mobileImg'
+                                            src='./src/img/project_img/2_2.jpg' alt='프로젝트 이미지'></div>
+                                </div>
+                            </div>
+                            <div class="info_wrap">
+                                <div class="info_title">TEXT_GENERATOR</div>
+                                <div class="info_sub">개인프로젝트</div>
+                                <div class="info_main">JQuery + AJAX + PHP 를 이용해 만든 첫 프로젝트입니다. AJAX를 이용하여 PHP를 통해 비동기적으로
+                                    서버에서 데이터를 CRUD 합니다. 반응형웹으로 만들어져 모든 환경에서 사용가능합니다.
+                                    <span onclick="moreButtonClick(2)">더보기</span>
+                                    <div class="more_wrap">
+                                        <p>···</p>
+                                        html/css를 배우던 초창기에 '이런 서비스가 있었으면 좋겠다' 해서 JQuery와 php를 연습할 겸 웹 프로젝트를 처음으로 진행하게
+                                        되었습니다.
+                                    </div>
+                                </div>
+                                <ul class="tag_wrap">
+                                    <li class="tag">#JQuery</li>
+                                    <li class="tag">#AJAX</li>
+                                    <li class="tag">#PHP</li>
+                                    <li class="tag">#반응형웹</li>
+                                </ul>
+                                <div class="button_wrap">
+                                    <a href="http://poot97.dothome.co.kr/TextGenerator/main.html" target="_blank">
+                                        <div class="goto">사이트 바로가기</div>
+                                    </a>
+                                    <a href="https://github.com/kimjy97/TEXT_GENERATOR" target="_blank">
+                                        <div class="more">GitHub</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wi wi3">
+                        <div class="Item_wrap">
+                            <div class="IMG_wrap">
+                                <div class="IMG_main" onclick="mainImgClick(3,0)"><img
+                                        src='./src/img/project_img/3_0.jpg' alt='프로젝트 메인이미지'></div>
+                                <div class="IMG_sub_wrap">
+                                    <div class="IMG_sub active" onclick="subImgClick(3,0)"><img
+                                            src='./src/img/project_img/3_0.jpg' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(3,1)"><img
+                                            src='./src/img/project_img/3_1.jpg' alt='프로젝트 이미지'></div>
+                                </div>
+                            </div>
+                            <div class="info_wrap">
+                                <div class="info_title">FIAT Redesign & Publishing</div>
+                                <div class="info_sub">개인프로젝트</div>
+                                <div class="info_main">자동차 브랜드 FIAT 홈페이지를 Photoshop으로 리디자인하고 Vanilla JS 를 이용하여 퍼블리싱
+                                    했습니다.</div>
+                                <ul class="tag_wrap">
+                                    <li class="tag">#VanillaJS</li>
+                                    <li class="tag">#swiper.js</li>
+                                </ul>
+                                <div class="button_wrap">
+                                    <a href="http://poot97.woobi.co.kr/fiat" target="_blank">
+                                        <div class="goto">사이트 바로가기</div>
+                                    </a>
+                                    <a href="https://github.com/kimjy97/FIAT-Redesign" target="_blank">
+                                        <div class="more">GitHub</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wi wi4">
+                        <div class="Item_wrap">
+                            <div class="IMG_wrap">
+                                <div class="IMG_main" onclick="mainImgClick(4,0)"><img
+                                        src='./src/img/project_img/4_0.jpg' alt='프로젝트 메인이미지'></div>
+                                <div class="IMG_sub_wrap">
+                                    <div class="IMG_sub active" onclick="subImgClick(4,0)"><img
+                                            src='./src/img/project_img/4_0.jpg' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(4,1)"><img
+                                            src='./src/img/project_img/4_1.jpg' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(4,2, true)"><img class='mobileImg'
+                                            src='./src/img/project_img/4_2.jpg' alt='프로젝트 이미지'></div>
+                                </div>
+                            </div>
+                            <div class="info_wrap">
+                                <div class="info_title">뉴발란스 Redesign & Publishing</div>
+                                <div class="info_sub">개인프로젝트</div>
+                                <div class="info_main">뉴발란스 홈페이지를 Figma로 리디자인하고 JQuery + SCSS 를 이용하여 퍼블리싱 했습니다. 반응형웹으로
+                                    만들어져 모든 환경에서 사용가능합니다.</div>
+                                <ul class="tag_wrap">
+                                    <li class="tag">#JQuery</li>
+                                    <li class="tag">#SCSS</li>
+                                    <li class="tag">#반응형웹</li>
+                                </ul>
+                                <div class="button_wrap">
+                                    <a href="http://poot97.woobi.co.kr/newbalance/" target="_blank">
+                                        <div class="goto">사이트 바로가기</div>
+                                    </a>
+                                    <a href="https://github.com/kimjy97/NewBalance-Redesign" target="_blank">
+                                        <div class="more">GitHub</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wi wi5">
+                        <div class="Item_wrap">
+                            <div class="IMG_wrap">
+                                <div class="IMG_main" onclick="mainImgClick(5,0)"><img
+                                        src='./src/img/project_img/5_0.jpg' alt='프로젝트 메인이미지'></div>
+                                <div class="IMG_sub_wrap">
+                                    <div class="IMG_sub active" onclick="subImgClick(5,0)"><img
+                                            src='./src/img/project_img/5_0.jpg' alt='프로젝트 이미지'></div>
+                                </div>
+                            </div>
+                            <div class="info_wrap">
+                                <div class="info_title">정부24 Clone Coding</div>
+                                <div class="info_sub">개인프로젝트</div>
+                                <div class="info_main">정부24 홈페이지를 퍼블리싱 연습 목적으로 클론코딩 해봤습니다. 기존 홈페이지의 마크업 구조를 좀 더 보완하였습니다.</div>
+                                <ul class="tag_wrap">
+                                    <li class="tag">#Publishing</li>
+                                    <li class="tag">#CloneCoding</li>
+                                </ul>
+                                <div class="button_wrap">
+                                    <a href="http://poot97.woobi.co.kr/government24/" target="_blank">
+                                        <div class="goto">사이트 바로가기</div>
+                                    </a>
+                                    <a href="https://github.com/kimjy97/governmentClone" target="_black">
+                                        <div class="more">GitHub</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Item_nav_next" title="NEXT PROJECT"></div>
+                    <div class="m_nav_wrap">
+                        <div class="prev"></div>
+                        <div class="next"></div>
+                    </div>
+                </div>
+                <ul class="Item_nav_button_wrap">
+                    <li id="nav0" class="active"></li>
+                    <li id="nav1"></li>
+                    <li id="nav2"></li>
+                    <li id="nav3"></li>
+                    <li id="nav4"></li>
+                    <li id="nav5"></li>
+                </ul>
+                <div class="sizeUP">
+                    <div class="top">
+                        <div class="close"></div>
+                    </div>
+                    <div class="ct"></div>
+                </div>
+                <div class="readme_container">
+                    <div class="readme_scroll">
+                        <div class="readme_wrap">
+                            <h1>JongYeon's 개발 블로그<span>PROJECT</span></h1>
+                            
+                            <div class="table">
+                                <ul>
+                                    <li><p class="label">간단 소개</p><p>개발 관련 정보들을 메모해두고 싶어 직접 풀스택으로 만든 개발 블로그</p></li>
+                                    <li><p class="label">진행 기간</p><p>2022. 11 ~ 진행 중</p></li>
+                                    <li><p class="label">핵심 사용 기술</p>
+                                        <ul class="tags">
+                                            <li>
+                                                <quotes>React.js</quotes>
+                                            </li>
+                                            <li>
+                                                <quotes>scss</quotes>
+                                            </li>
+                                            <li>
+                                                <quotes>axios</quotes>
+                                            </li>
+                                            <li>
+                                                <quotes>Node.js</quotes>
+                                            </li>
+                                            <li>
+                                                <quotes>express</quotes>
+                                            </li>
+                                            <li>
+                                                <quotes>RESTful</quotes>
+                                            </li>
+                                            <li>
+                                                <quotes>MongoDB</quotes>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><p class="label">구성원</p><p>개인 프로젝트</p></li>
+                                    <li><p class="label">사이트 바로가기</p><p><a href="https://blog.poot97.woobi.co.kr" target="_blank">JongYeon's 개발
+                                        블로그</a></p></li>
+                                </ul>
+                            </div>
+
+                            <div class="hr"></div>
+                            
+                            <div class="detailImg_wrap">
+                                <img src="./src/img/project_img/0_0.jpg">
+                                <img src="./src/img/project_img/0_2.jpg">
+                                <img src="./src/img/project_img/0_3.jpg">
+                            </div>
+
+                            <h2>상세 내용</h2>
+                                <h3> · 기술 선정 이유</h3>
+                                <p>컴포넌트 구조화의 간편함과 CSR의 특징인 부드러운 화면 전환이 가능한 것이 UI/UX 적으로 매력적으로 느껴져 React를 선정했고, React와 같이 쓰기좋은 Node.js를 서버로 쓰기로 했다. DB는 noSQL에 대해서 알아보고 싶었고 그렇게 복잡한 쿼리를 사용할 일이 없어보여 MongoDB를 사용하게 됐다.</p>
+                                <h3> · 프로젝트 과정</h3>
+                                <p>Figma로 디자인 -> React로 퍼블리싱 -> Node.js 서버 api 구축 -> 서버 배포 -> 검색엔진최적화 -> 개발자 지인들에게 간단한 QA 받고 버그 수정 -> 관리자페이지 구축 -> 유지보수</p>
+                                <h3> · 한계점</h3>
+                                <p>블로그를 만들고 구글 검색에 노출되어 여러 개발자들에게 정보를 공유하고 싶어서 SEO에 대해 찾아보다가 CSR 방식은 검색엔진최적화가 어렵다는 것을 알게 되었고 방법을 찾다가 SSR로 넘어가기에는 너무 오래걸릴 것 같아 CSR로 유지하면서 react-helmet과 sitemap을 생성하는 방법을 이용해 SEO 문제를 해결해 냈다. 다음에는 Next.js를 이용하여 SSR로 블로그를 개편해 볼 생각이다.</p>
+                        </div>
+                    </div>
+                    <div class="top">
+                        <div class="close" onclick="readmeClick()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="Works2_container">
+                <div class="blend_background"></div>
+                <h1>DESIGN & GRAPHIC</h1>
+                <p>자세히 보려면 마우스를 올려 클릭해주세요.</p>
+                <div class="Visual_container">
+                    <div class="Visual_wrap">
+                        <ul>
+                            <li id="v0" onclick="visualImgClick('Dyson_main.jpg')"><img
+                                    src='src/img/project_img/Dyson_main.jpg' alt='디자인 작업물'>
+                                <div class="info_wrap">
+                                    <img src="src/img/project_img/dyson_logo.png">
+                                    <p>DYSON Redesign</p>
+                                    <div class="colorset_wrap">
+                                        <ul>
+                                            <li>#3D3D3D<div style="background-color: #3D3D3D;"></div>
+                                            </li>
+                                            <li>#BEBEAB<div style="background-color: #BEBEAB;"></div>
+                                            </li>
+                                            <li>#626275<div style="background-color: #626275;"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="v1" onclick="visualImgClick('Fiat_main.jpg')"><img
+                                    src='src/img/project_img/Fiat_main.jpg' alt='디자인 작업물'>
+                                <div class="info_wrap">
+                                    <img src="src/img/project_img/FIAT_logo.png">
+                                    <p>FIAT Redesign</p>
+                                    <div class="colorset_wrap">
+                                        <ul>
+                                            <li>#F3F3F3<div style="background-color: #F3F3F3;"></div>
+                                            </li>
+                                            <li>#CC0001<div style="background-color: #CC0001;"></div>
+                                            </li>
+                                            <li>#1E1E1E<div style="background-color: #1E1E1E;"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="v2" onclick="visualImgClick('Adidas_main.jpg', true)"><img
+                                    src='src/img/project_img/Adidas_main.jpg' alt='디자인 작업물'>
+                                <div class="info_wrap">
+                                    <img src="src/img/project_img/ADIDAS_logo.png">
+                                    <p>ADIDAS Redesign</p>
+                                    <div class="colorset_wrap">
+                                        <ul>
+                                            <li>#000000<div style="background-color: #000000;"></div>
+                                            </li>
+                                            <li>#FFFFFF<div style="background-color: #FFFFFF;"></div>
+                                            </li>
+                                            <li>#FF3A3A<div style="background-color: #FF3A3A;"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="v3" onclick="visualImgClick('Polo_main.jpg')"><img
+                                    src='src/img/project_img/Polo_main.jpg' alt='디자인 작업물'>
+                                <div class="info_wrap">
+                                    <img src="src/img/project_img/POLO_logo.png">
+                                    <p>POLO Redesign</p>
+                                    <div class="colorset_wrap">
+                                        <ul>
+                                            <li>#000000<div style="background-color: #000000;"></div>
+                                            </li>
+                                            <li>#FFFFFF<div style="background-color: #FFFFFF;"></div>
+                                            </li>
+                                            <li>#882E2E<div style="background-color: #882E2E;"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="v4" onclick="visualImgClick('합성_타이포.jpg', true)"><img
+                                    src='src/img/project_img/합성_타이포.jpg' alt='디자인 작업물'>
+                                <div class="info_wrap">
+                                    <img>
+                                    <p>타이포 & 합성</p>
+                                    <div class="colorset_wrap">
+                                        <ul>
+                                            <li>#525E76<div style="background-color: #525e76;"></div>
+                                            </li>
+                                            <li>#D7A95C<div style="background-color: #D7A95C;"></div>
+                                            </li>
+                                            <li>#F8F8F8<div style="background-color: #F8F8F8;"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section class="section ct Contact" id="Contact">
+            <div class="Contact_container">
+                <div class="blend_background"></div>
+                <h1>CONTACT</h1>
+                <div class="Contact_wrap">
+                    <p>PHONE : 010. 2744. 9658</p>
+                    <p>E-MAIL : poot972@gmail.com</p>
+                    <p>GITHUB : https://github.com/kimjy97</p>
+                    <p>BLOG : https://blog.poot97.woobi.co.kr</p>
+                </div>
+                <ul class="social_wrap">
+                    <li><a href="https://github.com/kimjy97" target="_blank"><img src="src/img/github.png"
+                                alt="GITHUB"></a></li>
+                    <li><a href="#"><img src="src/img/instagram.png" alt="INSTAGRAM"></a></li>
+                    <li><a href="#"><img src="src/img/facebook.png" alt="FACEBOOK"></a></li>
+                </ul>
+                <div class="copyright">Copyright ⓒ 2023. JongYeon All rights reserved.</div>
+        </section>
+    </div>
+
+</body>
+
+<!-- Plugin : FullPage -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.css"
+    integrity="sha512-joJLRX4chQYCQlk0R4FXEgZHqsWA1hf4e+C+QKyi8fnfDm8FlEsNAVo+ByQhD19BrgVZGSOJKAQZa5M5gXDtpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.js"
+    integrity="sha512-rNf09cQHIWzD8BU37lIb3rInygeWXW2hVqJ7niVtTPXWuVR3aFiph1eFIeDiEQV8J45u0qfp7ng8I3TzJHY4Eg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Custom -->
+<script src="./js/topScrollbar.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

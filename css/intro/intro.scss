@@ -1,0 +1,166 @@
+#Intro {
+    height: 100vh;
+    background: linear-gradient(-45deg, #000000, rgb(61, 22, 41), rgb(36, 20, 63), #68648b);
+    background-size: 400% 400%;
+    animation: gradient 14s ease-in-out infinite;
+    $Intro : &;
+
+    #typo_1 {
+        position: absolute;
+        width: 100%;
+        top: 37vh;
+        z-index: 1000;
+        opacity: 0;
+        animation: typo_1 1000ms ease;
+        animation-fill-mode: forwards;
+        pointer-events: none;
+        box-sizing: border-box;
+
+        h1 {
+            line-height: 9rem;
+            color: white;
+            font-size: 9.1rem;
+            font-weight: 900;
+            text-align: center;
+            white-space: nowrap;
+            transition: 300ms ease;
+        }
+
+        h2 {
+            color: rgb(255, 255, 130);
+            font-size: 1.6rem;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 1.2vw;
+            animation: typo_1_1 900ms 800ms;
+            animation-fill-mode: backwards;
+            mix-blend-mode: difference;
+            transition: 300ms ease;
+        }
+    }
+
+    .scroll {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 50%;
+        bottom: 80px;
+        transform: translateX(-50%);
+        align-items: center;
+        z-index: 1000;
+
+        p {
+            color: white;
+            opacity: 0.8;
+            font-size: 0.8rem;
+            font-weight: 300;
+            transition: 300ms;
+        }
+
+        div {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            top: 18px;
+            background: url('../../src/img/arrow_1.png') 50% 50% no-repeat;
+            background-size: 35px 35px;
+            filter: invert(100%);
+        }
+
+        div:nth-child(1) {
+            animation: scrolldown 1300ms 650ms linear infinite;
+            animation-fill-mode: backwards;
+        }
+
+        div:nth-child(2) {
+            animation: scrolldown 1300ms linear infinite;
+        }
+
+        &.move {
+            position: absolute;
+        }
+    }
+
+}
+
+
+//---ANIMATION---//
+@keyframes typo_1 {
+    0% {
+        top: 50vh;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes typo_1_1 {
+    0% {
+        letter-spacing: 5vw;
+        opacity: 0;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes scrolldown {
+    0% {
+        top: 18px;
+        opacity: 0;
+    }
+
+    50% {
+        top: 35px;
+        opacity: 0.3;
+    }
+
+    100% {
+        top: 50px;
+        opacity: 0;
+    }
+}
+
+
+//--MEDIA_QUERY--//
+@media (max-width: 1360px) {
+    #typo_1 {
+        h1 {
+            line-height: 9.4vw !important;
+            font-size: 10.4vw !important;
+        }
+
+        h2 {
+            font-size: 2.6vw !important;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #typo_1 {
+        h1 {
+            padding: 0 10px !important;
+            text-align: center !important;
+            white-space: normal !important;
+            line-height: 3.4rem !important;
+            font-size: 3.8rem !important;
+        }
+
+        h2 {
+            font-size: 2.6vw !important;
+        }
+    }
+}

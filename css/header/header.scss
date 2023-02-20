@@ -1,0 +1,188 @@
+$header-height: 70px;
+$color-bg-main: rgba(27, 29, 35, 1);
+$color-blue: rgb(120, 97, 255);
+
+//---Header---//
+header {
+    position: fixed;
+    width: 100%;
+    height: $header-height;
+    top: 0px;
+    box-sizing: border-box;
+    z-index: 9999;
+
+    .Header_container {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 0 50px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        justify-content: space-between;
+        color: white;
+        font-weight: 500;
+        z-index: 9999;
+
+        &>.burger {
+            width: 40px;
+            height: $header-height;
+            display: none;
+            margin-left: 13px;
+            cursor: pointer;
+            filter: invert(100%);
+            transition: 200ms;
+
+            &>.open_icon {
+                position: absolute;
+                width: 35px;
+                height: 100%;
+                opacity: 1;
+                background: url('../../src/img/hamburger_icon.png') 50% 50% no-repeat;
+                background-size: 35px 35px;
+                transition: 200ms;
+            }
+
+            &>.close_icon {
+                position: absolute;
+                width: 35px;
+                height: 100%;
+                opacity: 0;
+                background: url('../../src/img/close_icon.png') 50% 50% no-repeat;
+                background-size: 20px 20px;
+                transition: 200ms;
+            }
+        }
+
+        &>.left {
+            display: flex;
+            padding-left: 10px;
+
+            img {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: auto;
+                height: 37px;
+                filter: invert(100%);
+                cursor: pointer;
+                transition: 300ms ease;
+                &:hover {
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        &>.right {
+            display: flex;
+            align-items: center;
+
+            &>ul {
+                display: flex;
+                gap: 0 16px;
+
+                li {
+                    position: relative;
+                    padding: 6px 10px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: color 200ms;
+
+                    &.visible {
+                        &::before {
+                            width: calc(100% - 17px) !important;
+                            transition: 300ms ease;
+                        }
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 0%;
+                        height: 100%;
+                        border-bottom: 2.8px solid rgba(255, 255, 255, 1);
+                        z-index: -1;
+                        box-sizing: border-box;
+                        transition: 150ms ease;
+                    }
+
+                    &:hover::before {
+                        width: calc(100% - 17px);
+                    }
+                }
+            }
+        }
+    }
+    .m_menu {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.95);
+        z-index: 9990;
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 120px;
+            li {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+
+//--MEDIA_QUERY--//
+@media (max-width: 1280px) {
+    .Header_container {
+        padding: 0 20px !important;
+        img {
+            padding-left: 0 !important;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+
+    /* Header 상단 고정 풀기
+    Header {
+        position: absolute !important;
+    }
+    */
+    .Header_container {
+        display: block !important;
+        padding: 0 0px !important;
+
+        &>.burger {
+            display: block !important;
+        }
+
+        &>.left {
+            padding: 0 !important;
+
+            img {
+                position: absolute !important;
+                top: 50% !important;
+                left: 50% !important;
+                height: 32px !important;
+                transform: translate(-50%, -50%) !important;
+            }
+        }
+
+        &>.right {
+            &>ul {
+                display: none !important;
+            }
+        }
+    }
+    .m_menu {
+        display: block !important;
+    }
+}
