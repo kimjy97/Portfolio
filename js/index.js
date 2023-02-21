@@ -3,6 +3,8 @@ history.replaceState({}, null, location.pathname);
 const timeOutarray = [];
 let vMove;
 
+
+// Fullpage 옵션 및 애니메이션 적용
 new fullpage('#fullpage', {
     // Options
     licenseKey: '',
@@ -235,7 +237,7 @@ const changeItemEvent = (prev, next) => {
     });
 }
 
-//갤러리 함수.
+// 갤러리 함수
 
 $(window).resize(function () {
     $('.wi .info_main .more_wrap').slideUp(0);
@@ -244,6 +246,8 @@ $(window).resize(function () {
 );
 
 let readmeOpen = false;
+
+// 클릭 이벤트
 const readmeClick = () => {
     if (readmeOpen) {
         $('.readme_container').removeClass('visible');
@@ -376,7 +380,7 @@ for (let i = 0; i < 6; i++) {
 
 //** WORKS 2 **//
 
-// 갤러리 자동 이동.
+// 갤러리 자동 이동
 $(".Visual_wrap").append($(".Visual_wrap ul").clone());
 
 
